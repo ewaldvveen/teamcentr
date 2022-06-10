@@ -1,0 +1,5 @@
+@import 'tc-typography';
+
+.tc-heading {
+  @include g-typography__headings;
+}

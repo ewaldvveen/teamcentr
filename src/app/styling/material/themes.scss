@@ -2,7 +2,11 @@
 
 @import '../material/palettes.scss';
 
-@include mat.core();
+$tc-primary-typography: mat.define-typography-config(
+  $font-family: 'Montserrat',
+);
+
+@include mat.core($tc-primary-typography);
 
 $tc-primary: mat.define-palette($tc-primary-palette, 700);
 $tc-accent: mat.define-palette($tc-accent-palette, 500);
